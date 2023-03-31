@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+        * {
+            margin: auto;
+            /* padding: 0; */
+        }
+        body {
+            background: rgb(32, 32, 32);
+            width: 50%
+        } 
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .nameimage {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgb(223, 223, 223);
+            padding: 10px 35px 10px 20px;
+            color:rgb(0, 0, 0);
+            font-family: 'Alkatra', cursive;
+            font-weight: 100;
+            font-size: 20px;
+            /* width: 50%; */
+
+        }
+        .nameimage > img {
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+        .container {
+            color:black;
+            background-color: rgb(129, 129, 129);
+            width: 85%;
+            padding: 10px 35px 10px 20px;
+            /* min-height: 100vh; */
+            font-family: monospace;
+            font-size: large;
+        }
+        .container > h2 {
+            text-decoration: underline;
+            text-decoration-color: rgb(0, 0, 0);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .block {
+            background: white;
+            width: auto;
+            padding: 10px;
+            min-height: auto;
+            color: black;
+        }
+        table {
+            margin: 0;
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+        tr {
+            margin: 0;
+        }
+        th {
+            color: black;
+            border: 1px solid black;
+            text-align: left;
+            text-indent: 5px;;
+        }
+        td {
+            color: black;
+            border: 1px solid black;
+            text-align: left;
+            text-indent: 5px;;
+        }
+        nav {
+            background: black;
+            padding: 15px 35px 15px 20px;
+            width: 85%;
+        }
+        nav > a {
+            background: white;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            transition: 0.3s;
+        }
+        nav > a:hover {
+            background: rgb(184, 184, 184);
+            color: black;
+        }
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(223, 223, 223);
+            padding: 10px 35px 10px 20px;
+            color:rgb(0, 0, 0);
+            font-family: 'Alkatra', cursive;
+            font-weight: 100;
+            font-size: 20px;
+            min-height: 10vh;;
+            /* width: 50%; */
+        }
+        @media only screen and (max-width: 600px) {
+        body {
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="nameimage">
+        <h1 class="left">Mehfooz Ahmed</h1>
+        <img class="right" height="200px"  src="https://yensplash.in/images/techTeam/mehfooz.jpeg" />
+    </div>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="https://www.linkedin.com/in/mehfooz-ahmed6607">Linked In</a>
+    </nav>
+    <div class="container">
+        <h2>Objective</h2>
+        <div class="block">To work and be a part of an organisation where I can use my knowledge and skills to contribute in the interest of the organisation.</div>
+        <br />
+        <h2>Education</h2>
+        <div class="block">
+            <div>
+                <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>Education</th>
+                    </tr>
+                    <tr>
+                        <td>2019-Present</td>
+                        <td>
+                            <ul>
+                                <li>Yenepoya Institute of Technology</li>
+                                <li>Bachelor of Engineering in CSE</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2017-2019</td>
+                        <td>
+                            <ul>
+                                <li>MGM PU College</li>
+                                <li>PCMS</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <br />
+        <h2>Skills</h2>
+        <div class="block">
+            <div>
+                <table>
+                    <tr>
+                        <th>Soft Skills</th>
+                        <th>Program/Scripting</th>
+                    </tr>
+                    <tr>
+                        <td><ol>
+                            <li>
+                                Leadership
+                            </li>
+                            <li>
+                                Teamwork
+                            </li>
+                            <li>
+                                Communication
+                            </li>
+                            <li> Creative Problem Solving</li>
+                        </ol>
+                        </td>
+                        <td>
+                            <li>
+                                Java(Web Development)
+                            </li>
+                            <li>
+                                SQL, MySQL
+                            </li>
+                            <li>
+                                HTML/CSS
+                            </li>
+                            <li>
+                                Dev Tools
+                            </li>
+                        </ol>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <br />
+        <h2>Projects</h2>
+        <div class="block">
+            <ol>
+                <li>
+                    <b>Yensplash Website</b>
+                        <ul>
+                            <li>
+                                A static website dedicated to College Fest held annually. A team of 4 members worked in this project.
+                            </li>
+                            <li>Click here to Check out: <a href="https://yensplash.in"><button>Yensplash</button></a></li>
+                        </ul>
+                </li>
+                <li>
+                    <b>Driver Heart Health & Drowsiness Analysis for Road Safety</b> <sup>(Work In Progress)</sup>
+                    <ul>
+                        <li>
+                            Embedded system to analyse the heart health of driver and his drowsiness since 40% of road accidents are caused due to same. Will be linked to ADAS to safely stop and alert.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Online Course Batch Scheduling System</b>
+                    <ul>
+                        <li>
+                            Dynamic website facilitating the online educational institution to publish and manage courses. A team
+of 4 members worked in this project.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <br />
+    </div>
+    <nav></nav>
+<footer>
+    Copyright &#169; 2023
+</footer>
+</body>
+</html>
